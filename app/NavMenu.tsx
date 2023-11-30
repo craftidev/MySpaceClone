@@ -4,15 +4,23 @@ import styles from './NavMenu.module.css';
 
 export default function NavMenu() {
     return (
-        <nav className={styles.styles}>
-            <Link href={'/'}>
-                <Image
-                    src="/logo.svg"
-                    width={216}
-                    height={30}
-                    alt="MySpaceClone Logo"
-                />
-            </Link>
+        <nav className={styles.nav}>
+            <p className={styles.logo}>
+                <Link href={'/'}>
+                    <Image
+                        src="/logo.svg"
+                        width={60}
+                        height={60}
+                        alt="MySpaceClone Logo"
+                    />
+                    <Image
+                        src="/logo_text.png"
+                        width={500}
+                        height={60}
+                        alt="MySpaceClone Text Logo"
+                    />
+                </Link>
+            </p>
             <ul className={styles.links}>
                 <li>
                     <Link href={'/about'}>About</Link>
