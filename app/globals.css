@@ -103,6 +103,11 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    color: #57cbee;
+    transition: 300ms;
+}
+
 @media (prefers-color-scheme: dark) {
     html {
         color-scheme: dark;
